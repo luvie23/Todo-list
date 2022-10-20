@@ -8,6 +8,7 @@ export default function todoForm(){
 
     const title = document.createElement('input');
     title.setAttribute('id', 'title');
+    title.setAttribute('type', 'text');
     const titleLabel = document.createElement('label')
     titleLabel.innerText = 'Title:'
     titleLabel.setAttribute('for', 'title');
@@ -15,7 +16,8 @@ export default function todoForm(){
 
     const description = document.createElement('input');
     description.setAttribute('id', 'description');
-    const descriptionLabel = document.createElement('description')
+    description.setAttribute('type', 'text');
+    const descriptionLabel = document.createElement('label')
     descriptionLabel.innerText = 'Description:'
     descriptionLabel.setAttribute('for', 'description');
 
