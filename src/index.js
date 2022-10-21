@@ -2,7 +2,7 @@ import './style.css';
 
 import todoBoard from './todoBoard';
 import todoForm from './todoform';
-import { createTodo, submitTodo } from './todo';
+import {submitTodo } from './todo';
 
 
 

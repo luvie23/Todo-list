@@ -1,3 +1,6 @@
+let todos = [];
+
+import createCards from "./todoDOM";
 
 function createTodo(title, description, dueDate){
     return {title, description, dueDate}
@@ -9,21 +12,13 @@ function submitTodo(){
     let dueDate = document.getElementById('dueDate');
 
     
-    addTodo(createTodo(title.value, description.value, dueDate.value));
+    todos.push(createTodo(title.value, description.value, dueDate.value));
 
+    createCards(todos)
 }
 
 
-function addTodo(todo){
-    if (todo !== undefined){
-    const board = document.getElementById('board');
-    const test = document.createElement('div');
-    test.innerText = todo.title
 
-    board.appendChild(test)
-    }
-    
 
-}
 
-export {addTodo, createTodo, submitTodo}
+export {submitTodo}

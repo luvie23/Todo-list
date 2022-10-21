@@ -1,5 +1,5 @@
 import sidebar from './sidebar';
-import { addTodo } from './todo';
+
 
 export default function todoBoard(){
     
@@ -12,6 +12,6 @@ export default function todoBoard(){
 
 
     content.appendChild(board);
-    addTodo()
+
 
 }
