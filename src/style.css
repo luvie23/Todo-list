@@ -64,11 +64,10 @@ header{
     font-family: 'Bebas Neue', cursive;
 }
 
-#description{
-    word-wrap: break-word;
-    word-break: break-all;
-
+textarea {
+    resize: none;
 }
+  
 
 form{
     display: flex;
@@ -83,7 +82,13 @@ form{
     margin-left:  2vw;
     z-index: 3;
 
-    gap: 20px;
+    gap: 10px;
+}
+
+form>div{
+    display: flex;
+    margin-top: 20px;
+    gap: 2vw;
 }
 
 #description{
