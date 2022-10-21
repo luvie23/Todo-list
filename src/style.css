@@ -30,11 +30,23 @@ body{
 }
 
 #board{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+    gap: 20px;
     background-color: #0C4A6E;
     height: 60%;
     width: 60%;
     margin-left: 10%;
+    overflow: auto;
 }
+
+.cards{
+    display: flex;
+    width: 200px;
+    height: 150px;
+    background-color: antiquewhite;
+}
+
 
 #buttons{
     display: flex;

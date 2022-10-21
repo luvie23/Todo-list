@@ -8,7 +8,7 @@ export default function createCards(todos){
         let element = document.createElement('div');
         element.setAttribute('id', 'card' + i);
         element.className = "cards";
-        element.textContent = todos[i].title
+        element.innerHTML = `${todos[i].title} this nuts`
         board.appendChild(element)
     }
 
