@@ -8,16 +8,21 @@ function submitTodo(){
     let description = document.getElementById('description');
     let dueDate = document.getElementById('dueDate');
 
-    return createTodo(title.value, description.value, dueDate.value);
+    
+    addTodo(createTodo(title.value, description.value, dueDate.value));
+
 }
 
-function addTodo(){
-    const board = document.getElementById('board');
 
+function addTodo(todo){
+    if (todo !== undefined){
+    const board = document.getElementById('board');
     const test = document.createElement('div');
-    test.setAttribute('id','test');
-    test.textContent = "test"
+    test.innerText = todo.title
+
     board.appendChild(test)
+    }
+    
 
 }
 
