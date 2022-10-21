@@ -32,10 +32,12 @@ export default function todoForm(){
     const buttons = document.createElement('div');
 
     const saveButton = document.createElement('button');
+    saveButton.setAttribute('id', 'saveButton');
     saveButton.setAttribute('type', 'button');
     saveButton.textContent = 'Save';
 
     const closeButton = document.createElement('button');
+    closeButton.setAttribute('id', 'closeButton');
     closeButton.setAttribute('type', 'button');
     closeButton.textContent = 'X';
 

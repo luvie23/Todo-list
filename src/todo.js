@@ -3,7 +3,13 @@ function createTodo(title, description, dueDate){
     return {title, description, dueDate}
 }
 
+function submitTodo(){
+    let title = document.getElementById('title');
+    let description = document.getElementById('description');
+    let dueDate = document.getElementById('dueDate');
 
+    return createTodo(title.value, description.value, dueDate.value);
+}
 
 function addTodo(){
     const board = document.getElementById('board');
@@ -15,4 +21,4 @@ function addTodo(){
 
 }
 
-export {addTodo, createTodo}
+export {addTodo, createTodo, submitTodo}
