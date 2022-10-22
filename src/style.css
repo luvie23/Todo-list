@@ -42,11 +42,13 @@ body{
 }
 
 .cards{
-    display: flex;
+
     width: 200px;
     height: 150px;
     background-color: antiquewhite;
     padding: 10px;
+
+    overflow-wrap: break-word;
 }
 
 

@@ -12,7 +12,7 @@ function submitTodo(){
     let description = document.getElementById('description');
     let dueDate = document.getElementById('dueDate');
 
-    console.log(title.value)
+
     if (title.value === '' || description.value ==='' || dueDate.value === ''){
         alert('Please enter the complete details')
     } else{
