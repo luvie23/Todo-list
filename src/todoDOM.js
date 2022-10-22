@@ -1,14 +1,16 @@
+import { remove } from "./todo";
 
 export default function createCards(todos){
-    console.log(todos)
+    let list = todos;
+    console.log(list)
     let board = document.getElementById('board');
-    board.innerHTML = ""
+    board.textContent = ""
 
-    for (let i = 0; i < todos.length; i++){
+    for (let i = 0; i < list.length; i++){
         let element = document.createElement('div');
         element.setAttribute('id', 'card' + i);
         element.className = "cards";
-        element.innerHTML = `${todos[i].title} this nuts`
+        element.textContent = `${list[i].title} `
 
         let buttons = document.createElement('div');
         buttons.className = "buttons";
@@ -19,15 +21,14 @@ export default function createCards(todos){
         button.className = "card-button";
         button.onclick = function(){
             remove(button.getAttribute('id').charAt(button.getAttribute('id').length - 1)) ;
+            
+            // remove(button.getAttribute('id').charAt(button.getAttribute('id').length - 1)) ;
         }
 
         element.appendChild(button)
         board.appendChild(element)
+        
     }
 
 }
 
-function remove(index){
-    myLibrary.splice(index,1);
-    setupShelf();
-}

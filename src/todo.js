@@ -1,4 +1,5 @@
 let todos = [];
+let done = [];
 
 import createCards from "./todoDOM";
 
@@ -17,8 +18,12 @@ function submitTodo(){
     createCards(todos)
 }
 
+function remove(index){
+    done.push(todos.splice(index,1));
+    createCards(todos);
+    console.log(done)
+}
 
 
 
-
-export {submitTodo}
+export {submitTodo, remove}
