@@ -12,6 +12,7 @@ document.getElementById('addTodo').addEventListener('click',function(){
     this.disabled = true;
     todoForm()
     document.getElementById('saveButton').addEventListener('click', function(){
+        console.log(this)
         submitTodo()
     })
 })

@@ -12,10 +12,15 @@ function submitTodo(){
     let description = document.getElementById('description');
     let dueDate = document.getElementById('dueDate');
 
-    
-    todos.push(createTodo(title.value, description.value, dueDate.value));
+    console.log(title.value)
+    if (title.value === '' || description.value ==='' || dueDate.value === ''){
+        alert('Please enter the complete details')
+    } else{
+        todos.push(createTodo(title.value, description.value, dueDate.value));
 
-    createCards(todos)
+        createCards(todos)
+    }
+    
 }
 
 function remove(index){

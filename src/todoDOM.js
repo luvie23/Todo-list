@@ -10,7 +10,7 @@ export default function createCards(todos){
         let element = document.createElement('div');
         element.setAttribute('id', 'card' + i);
         element.className = "cards";
-        element.textContent = `${list[i].title} `
+        element.innerHTML = ` <em>${list[i].title}</em> <br> ${list[i].description} <br> Finish by ${list[i].dueDate} `
 
         let buttons = document.createElement('div');
         buttons.className = "buttons";
