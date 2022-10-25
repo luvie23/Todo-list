@@ -94,8 +94,10 @@ header{
 
 }
 .card-button{
-    border: 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
     cursor: pointer;
+    
 
 }
 
@@ -113,6 +115,12 @@ header{
 
 textarea {
     resize: none;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+input {
+    border-radius: 5px;
+    border: 2px solid #ccc;
 }
   
 
@@ -123,7 +131,7 @@ form{
     justify-content: center;
     height: 300px;
     width: 200px;
-    background-color: #97BEC7;
+    background-color: rgb(255, 180, 162, .4);
     font-family: 'Bebas Neue', cursive;
     position: absolute;
     margin-top: 30vh;
@@ -132,6 +140,7 @@ form{
     gap: 10px;
     border-radius: 5px;
     border: 1px solid black;
+    
 }
 
 form>div{
