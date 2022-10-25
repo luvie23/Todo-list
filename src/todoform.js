@@ -58,6 +58,8 @@ export default function todoForm(){
     document.getElementById('closeButton').addEventListener('click',function(){
         const element = document.getElementById('form');
         element.parentNode.removeChild(element);
+        
+        //enable the add todo again
         const element2 = document.getElementById('addTodo');
         element2.disabled = false;
 

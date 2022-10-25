@@ -1,12 +1,14 @@
 let todos = [];
-let done = [];
 
+
+import { addCompleted } from "./completed";
 import createCards from "./todoDOM";
+
 
 function createTodo(title, description, dueDate){
     return {title, description, dueDate}
 }
-
+    //sample todo
 const sample = createTodo('sample withadadasdasd long title', 'quick description on sample todo', '2022-09-28')
 
 todos.push(sample);
@@ -16,7 +18,7 @@ function submitTodo(){
     let description = document.getElementById('description');
     let dueDate = document.getElementById('dueDate');
 
-    //sample todo
+
 
 
 
@@ -31,9 +33,8 @@ function submitTodo(){
 }
 
 function remove(index){
-    done.push(todos.splice(index,1));
+    addCompleted(todos.splice(index,1));
     createCards(todos);
-    console.log(done)
 }
 
 function initialize(){
