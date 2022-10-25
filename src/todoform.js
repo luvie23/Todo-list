@@ -30,6 +30,7 @@ export default function todoForm(){
     dueDateLabel.setAttribute('for', 'dueDate');
 
     const buttons = document.createElement('div');
+    buttons.setAttribute('id', 'buttonDiv');
 
     const saveButton = document.createElement('button');
     saveButton.setAttribute('id', 'saveButton');
@@ -52,6 +53,19 @@ export default function todoForm(){
     form.appendChild(dueDate);
     form.appendChild(buttons);
 
+
+
+    document.getElementById('closeButton').addEventListener('click',function(){
+        const element = document.getElementById('form');
+        console.log(element)
+        element.parentNode.removeChild(element);
+        const element2 = document.getElementById('addTodo');
+        element2.disabled = false;
+
+    })
+
     
 
 }
+
+
