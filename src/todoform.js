@@ -57,15 +57,11 @@ export default function todoForm(){
 
     document.getElementById('closeButton').addEventListener('click',function(){
         const element = document.getElementById('form');
-        console.log(element)
         element.parentNode.removeChild(element);
         const element2 = document.getElementById('addTodo');
         element2.disabled = false;
 
-    })
-
-    
-
+    })   
 }
 
 

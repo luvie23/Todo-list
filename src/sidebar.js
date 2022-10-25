@@ -10,8 +10,8 @@ export default function sidebar(){
     buttons.setAttribute('id','buttons');
 
     const projects = document.createElement('button');
-    projects.textContent = "PROJECTS";
-    projects.setAttribute('id','projects');
+    projects.textContent = "COMPLETED";
+    projects.setAttribute('id','completed');
     projects.classList.add('button');
 
     const addTodo = document.createElement('button');
