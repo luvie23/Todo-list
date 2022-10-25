@@ -11,7 +11,7 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #ADC4C9;
+    background-color: #6D6875;
 }
 
 header{
@@ -27,7 +27,7 @@ header{
     width: 100%;
     align-items: center;
 
-    background-color: #ADC4C9;
+    background-color: #6D6875;
 }
 
 #sidebar{
@@ -37,7 +37,10 @@ header{
     justify-content: center;
     height: 100%;
     width: 200px;
-    background-color: #203135;
+    font-size: 2rem;
+    background-color: #E5989B ;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
 
 }
 
@@ -45,7 +48,7 @@ header{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
     gap: 20px;
-    background-color: #5B9CB7;
+    background-color: #B5838D;
     height: 60vh;
     width: 60vw;
     margin-left: 5vw;
@@ -60,20 +63,23 @@ header{
     font-family: 'Roboto', sans-serif;
     width: 200px;
     height: fit-content;
-    background-color: #3A6375;
+    background-color: rgb(255, 180, 162, .4);
     padding: 10px;
     border-radius: 5px;
     overflow-wrap: break-word;
     font-size: 2rem;
+    font-weight: bold;
 }
 
 .cards>p{
     font-size: 1rem;
+    font-weight: 400;
 }
 
 .cards>span{
     font-size: .8rem;
     margin-right: 2vw;
+    font-weight: lighter;
 }
 
 
@@ -100,7 +106,7 @@ header{
     border: 0;
     border-radius: 20px;
     color: white;
-    background-color: rgb(10,10,10, .2);
+    background-color: rgb(10,10,10, .3);
     font-family: 'Bebas Neue', cursive;
     cursor: pointer;
 }
@@ -120,7 +126,7 @@ form{
     background-color: #97BEC7;
     font-family: 'Bebas Neue', cursive;
     position: absolute;
-    margin-top: 25vh;
+    margin-top: 30vh;
     margin-left:  2vw;
     z-index: 3;
     gap: 10px;

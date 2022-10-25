@@ -9,6 +9,7 @@ todoBoard()
 
 initialize()
 document.getElementById('addTodo').addEventListener('click',function(){
+    initialize()
     this.disabled = true;
     todoForm()
     document.getElementById('saveButton').addEventListener('click', function(){
