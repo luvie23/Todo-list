@@ -7,10 +7,17 @@ function createTodo(title, description, dueDate){
     return {title, description, dueDate}
 }
 
+const sample = createTodo('sample', 'quick description on sample todo', '2022-09-28')
+
+todos.push(sample);
+
 function submitTodo(){
     let title = document.getElementById('title');
     let description = document.getElementById('description');
     let dueDate = document.getElementById('dueDate');
+
+    //sample todo
+
 
 
     if (title.value === '' || description.value ==='' || dueDate.value === ''){
@@ -29,6 +36,10 @@ function remove(index){
     console.log(done)
 }
 
+function initialize(){
+    createCards(todos)
+}
 
 
-export {submitTodo, remove}
+
+export {submitTodo, remove, initialize}
