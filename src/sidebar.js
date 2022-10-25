@@ -15,14 +15,16 @@ export default function sidebar(){
     projects.classList.add('button');
 
     const addTodo = document.createElement('button');
-    addTodo.textContent = "+ TODO"
+    addTodo.textContent = "+ TODO";
     addTodo.setAttribute('id','addTodo');
     addTodo.classList.add('button');
 
-
+    const logo = document.createElement('h1');
+    logo.textContent = 'TODO LIST';
 
     buttons.appendChild(projects);
     buttons.appendChild(addTodo);
+    sidebar.appendChild(logo);
     sidebar.appendChild(buttons);
     content.appendChild(sidebar);
     

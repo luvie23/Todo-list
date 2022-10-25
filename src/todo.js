@@ -7,7 +7,7 @@ function createTodo(title, description, dueDate){
     return {title, description, dueDate}
 }
 
-const sample = createTodo('sample', 'quick description on sample todo', '2022-09-28')
+const sample = createTodo('sample withadadasdasd long title', 'quick description on sample todo', '2022-09-28')
 
 todos.push(sample);
 

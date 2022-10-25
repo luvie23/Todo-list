@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 html{
     font-size: 14px;
 
@@ -12,6 +14,11 @@ body{
     background-color: #ADC4C9;
 }
 
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 #content{
@@ -24,9 +31,14 @@ body{
 }
 
 #sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 200px;
     background-color: #203135;
+
 }
 
 #board{
@@ -44,12 +56,24 @@ body{
 }
 
 .cards{
-
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
     width: 200px;
-    height: 150px;
-    background-color: #203135;
+    height: fit-content;
+    background-color: #3A6375;
     padding: 10px;
+    border-radius: 5px;
     overflow-wrap: break-word;
+    font-size: 2rem;
+}
+
+.cards>p{
+    font-size: 1rem;
+}
+
+.cards>span{
+    font-size: .8rem;
+    margin-right: 2vw;
 }
 
 
@@ -58,8 +82,14 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 200px;
+    padding-top: 50px;
+    padding-bottom: 300px;
     gap: 20px;
+
+}
+.card-button{
+    border: 0;
+    cursor: pointer;
 
 }
 
@@ -72,6 +102,7 @@ body{
     color: white;
     background-color: rgb(10,10,10, .2);
     font-family: 'Bebas Neue', cursive;
+    cursor: pointer;
 }
 
 textarea {
@@ -86,21 +117,38 @@ form{
     justify-content: center;
     height: 300px;
     width: 200px;
-    background-color: white;
+    background-color: #97BEC7;
+    font-family: 'Bebas Neue', cursive;
     position: absolute;
-    margin-top: 20vh;
+    margin-top: 25vh;
     margin-left:  2vw;
     z-index: 3;
-
     gap: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
 form>div{
     display: flex;
     margin-top: 20px;
     gap: 2vw;
+
+}
+
+#buttonDiv>button{
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', cursive;
 }
 
 #description{
     height: 50px;
 }
+
+
+@media only screen and (max-width: 600px) {
+    form {
+        margin-top: 50vh;
+    }
+  }
