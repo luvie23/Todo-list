@@ -11,7 +11,7 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #6D6875;
+    background-color: #4A4E69;
 }
 
 header{
@@ -27,7 +27,7 @@ header{
     width: 100%;
     align-items: center;
 
-    background-color: #6D6875;
+    background-color: #4A4E69;
 }
 
 
@@ -40,7 +40,7 @@ header{
     height: 100%;
     width: 200px;
     font-size: 2rem;
-    background-color: #E5989B ;
+    background-color: #AE2012 ;
     color: white;
     font-family: 'Bebas Neue', cursive;
 
@@ -50,7 +50,7 @@ header{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
     gap: 20px;
-    background-color: #B5838D;
+    background-image: linear-gradient(320deg, #AE2012,#BB3E03,#EE9B00);
     height: 60vh;
     width: 60vw;
     margin-left: 5vw;
@@ -61,21 +61,23 @@ header{
 }
 
 .cards{
-    color: aliceblue;
+    color: #03045E;
     font-family: 'Roboto', sans-serif;
     width: 200px;
     height: fit-content;
-    background-color: rgb(255, 180, 162, .4);
+    background-image: linear-gradient(120deg, #F1C0E8,#A3C4F3,#98F5E1);
     padding: 10px;
     border-radius: 5px;
     overflow-wrap: break-word;
     font-size: 2rem;
     font-weight: bold;
+
 }
 
 .cards>p{
     font-size: 1rem;
     font-weight: 400;
+
 }
 
 .cards>span{
